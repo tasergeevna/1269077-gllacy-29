@@ -1,0 +1,71 @@
+/* Fonts */
+
+
+
+/*Variables*/
+
+:root {
+
+  /* Main page colors */
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+
+  /* Catalog additional colors */
+
+   /* Conditions colors */
+
+}
+
+
+
+/* Global */
+
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  box-shadow: 0 4px 4px 0 var(--body-shadow);
+}
+
+.page {
+  height: 100%;
+  background-color: var(--soft-back-gray);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.display-none {
+  display: none;
+}
+
+
+.position-relative {
+  position: relative;
+}
