@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page index-main-color" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
@@ -8,10 +8,10 @@
   </head>
   <body class="page-body">
     <header>
-      <div class="centered-wrapper">
-        <div class="top-bar">
-          <a class="main-logo" href="#">
-            <img>
+      <div class="top-bar">
+        <div class="nav-wrapper">
+          <a class="main-logo-wrapper" href="#">
+            <img class="main-logo" src="img/main-logo.png" width="154" height="64" alt="Логотип магазина мороженого Глэйси">
           </a>
           <nav class="main-nav">
             <li>
@@ -24,11 +24,11 @@
               <a href="#">О компании</a>
             </li>
           </nav>
-          <div class="user-section-buttons">
-            <button class="search-modal-button" type="button"></button>
-            <a href="#">Вход</a>
-            <a href="#">Пусто</a>
-          </div>
+        </div>
+        <div class="user-section-buttons">
+          <button class="search-modal-button" type="button"></button>
+          <a href="#">Вход</a>
+          <a href="#">Пусто</a>
         </div>
         <div>
           <p>с 10 до 20, ежедневно</p>
@@ -57,7 +57,7 @@
           <input type="email">
           <input type="login">
         </form>
-        <a>Вход</a>
+        <a class="basic-button">Войти</a>
         <div class="user-links">
           <a>Забыли пароль?</a>
           <a>Новая регистрация</a>
@@ -76,19 +76,19 @@
             <li>
               <div class="slide">
                 <p>Крем-брюле и пломбир с малиновым джемом</p>
-                <a href="#">Дайте оба!</a>
+                <a class="basic-button" href="#">Давайте оба!</a>
               </div>
             </li>
             <li>
               <div class="slide">
                 <p>Шоколадный пломбир и лимонный сорбет</p>
-                <a href="#">Дайте оба!</a>
+                <a class="basic-button" href="#">Давайте оба!</a>
               </div>
             </li>
             <li>
               <div class="slide">
                 <p>Пломбир с помадкой и клубничный щербет</p>
-                <a href="#">Дайте оба!</a>
+                <a class="basic-button" href="#">Давайте оба!</a>
               </div>
             </li>
           </ul>
@@ -108,15 +108,15 @@
 
       <section class="banners-section">
         <h2 class="visually-hidden">Баннеры с акциями</h2>
-        <div>
-          <h3>Малинка даром!</h3>
+        <div class="banner-wrapper banner-berries">
+          <h3 class="banner-headline">Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button>Хочу варенье!</button>
+          <button class="basic-button">Хочу варенье!</button>
         </div>
-        <div>
-          <h3>Шоколадки даром!</h3>
+        <div class="banner-wrapper banner-choko">
+          <h3 class="banner-headline">Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button>Хочу шоколадки!</button>
+          <button class="basic-button">Хочу шоколадки!</button>
         </div>
       </section>
 
@@ -127,28 +127,28 @@
           <img>
           <span class="hit-price">310</span>
           <p class="hit-desc">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <a href="#">Быстрый просмотр</a>
+          <a class="basic-button" href="#">Быстрый просмотр</a>
         </div>
         <div class="hit-item">
           <span>Хит</span>
           <img>
           <span class="hit-price">380</span>
           <p class="hit-desc">Сливочно-кофейное с кусочками шоколада</p>
-          <a href="#">Быстрый просмотр</a>
+          <a class="basic-button" href="#">Быстрый просмотр</a>
         </div>
         <div class="hit-item">
           <span>Хит</span>
           <img>
           <span class="hit-price">355</span>
           <p class="hit-desc">Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <a href="#">Быстрый просмотр</a>
+          <a class="basic-button" href="#">Быстрый просмотр</a>
         </div>
         <div class="hit-item">
           <span>Хит</span>
           <img>
           <span class="hit-price">415</span>
           <p class="hit-desc">Сливочное крем-брюле с карамельной подливкой </p>
-          <a href="#">Быстрый просмотр</a>
+          <a class="basic-button" href="#">Быстрый просмотр</a>
         </div>
       </section>
 
@@ -172,7 +172,7 @@
         <div class="small-block-wrapper">
           <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <input>
-          <button type="submit">Отправить</button>
+          <button class="basic-button" type="submit">Отправить</button>
         </div>
       </section>
 
@@ -185,14 +185,14 @@
           <a>8 812 450-25-25</a>
           <span>(с 10 до 20 ежедневно)</span>
         </div>
-        <button>Форма обратной связи</button>
+        <button class="basic-button">Форма обратной связи</button>
         <div class="modal feedback-modal">
           <p>Мы обязательно вам ответим!</p>
           <form>
             <input type="text">
             <input type="email">
             <input type="textarea">
-            <button type="submit">Отправить</button>
+            <button class="basic-button" type="submit">Отправить</button>
           </form>
           <button class="modal-close" type="button"></button>
         </div>

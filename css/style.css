@@ -1,5 +1,35 @@
 /* Fonts */
 
+/* roboto-regular */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+       url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), /* Modern Browsers */
+}
+
+/* roboto-500 */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+       url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), /* Modern Browsers */
+}
+
+/* roboto-700 */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+       url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"), /* Modern Browsers */
+}
+
 
 
 /*Variables*/
@@ -9,10 +39,13 @@
   /* Main page colors */
   --basic-white: #ffffff;
   --basic-black: #000000;
+  --index-green: #849d8f;
+  --index-gray: #8996a6;
+  --index-cocoa: #9d8b84;
 
   /* Catalog additional colors */
 
-   /* Conditions colors */
+  /* Conditions colors */
 
 }
 
@@ -22,21 +55,19 @@
 
 
 body {
-  width: 1200px;
+  width: 1146px;
   margin: 0 auto;
   padding: 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", "Arial", sans-serif;
   color: var(--basic-black);
-  text-transform: uppercase;
-  background-color: var(--basic-white);
-  box-shadow: 0 4px 4px 0 var(--body-shadow);
 }
 
 .page {
+  width: 1200px;
   height: 100%;
   background-color: var(--soft-back-gray);
 }
@@ -68,4 +99,67 @@ img {
 
 .position-relative {
   position: relative;
+}
+
+
+.index-main-color {
+  background-color: var(--index-green);
+}
+
+.index-gray-color {
+  background-color: var(--index-gray);
+}
+
+.index-cocoa-color {
+  background-color: var(--index-cocoa);
+}
+
+.basic-button {
+  border-radius: 4px;
+
+}
+
+/* Main */
+
+.main-nav {
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: var(--basic-white);
+  opacity: 75%;
+}
+
+.banners-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 26px;
+}
+
+.banner-wrapper {
+  width: 560px;
+  min-height: 229px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: var(--basic-white);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.banner-berries {
+  background-image: url("../img/berries-banner.png");
+}
+
+.banner-choko {
+  background-image: url("../img/choco-banner.png");
+}
+
+.banner-headline {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+
 }
