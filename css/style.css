@@ -47,6 +47,7 @@
   --basic-button-soft: rgba(242, 104, 67, 1);
   --basic-button-deep: rgba(231, 74, 53, 1);
   --basic-button-shadow: #ac1000;
+  --border-opacity-white: rgba(255, 255, 255, 0.25);
 
   /* Catalog additional colors */
 
@@ -139,16 +140,75 @@ img {
 }
 /* Main */
 
+.main-logo-wrapper {
+  padding-top: 9px;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 3fr, 1fr;
+  column-gap: 26px;
+  min-height: 99px;
+}
+
+.logo-nav-wrapper {
+  grid-column: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-section {
+  grid-column: 2/2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+
+}
+
 .main-nav {
   font-weight: 700;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 28px;
 }
 
-.main-nav a {
+.nav-link {
   color: var(--basic-white);
   opacity: 75%;
+  padding: 0 32px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.main-nav a:first-child {
+  padding-left: 24px;
+}
+
+.search-modal-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.user-buttons {
+  color: var(--basic-white);
+}
+
+.working-hours {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-white);
+}
+
+.phone-number {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  color: var(--basic-white);
 }
 
 .catalog-nav {
@@ -173,6 +233,23 @@ img {
 .catalog-nav li {
   line-height: 16px;
   padding: 14px 15px;
+
+}
+
+.slider {
+  list-style: none;
+  min-height: 524px;
+  width: 1146px;
+  position: relative;
+}
+
+.slide-headline {
+  color: var(--basic-white);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  filter: drop-shadow(0 4px 4px 0 var(--shadow-black));
+  margin: 0 auto;
 
 }
 

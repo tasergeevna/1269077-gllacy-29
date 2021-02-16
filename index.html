@@ -9,33 +9,35 @@
   <body class="page-body">
     <header>
       <div class="top-bar">
-        <div class="nav-wrapper">
+        <div class="logo-nav-wrapper">
           <a class="main-logo-wrapper" href="#">
             <img class="main-logo" src="img/main-logo.png" width="154" height="64" alt="Логотип магазина мороженого Глэйси">
           </a>
           <nav class="main-nav">
             <li>
-              <a href="#">Каталог</a>
+              <a class="nav-link" href="#">Каталог</a>
             </li>
             <li>
-              <a href="#">Доставка и оплата</a>
+              <a class="nav-link" href="#">Доставка и оплата</a>
             </li>
             <li>
-              <a href="#">О компании</a>
+              <a class="nav-link" href="#">О компании</a>
             </li>
           </nav>
         </div>
-        <div class="user-section-buttons">
-          <button class="search-modal-button" type="button"></button>
-          <a href="#">Вход</a>
-          <a href="#">Пусто</a>
-        </div>
-        <div>
-          <p>с 10 до 20, ежедневно</p>
-          <a>8 812 450-25-25</a>
+        <div class="user-section">
+          <div class="user-section-buttons">
+            <button class="search-modal-button" type="button"></button>
+            <a class="user-buttons" href="#">Вход</a>
+            <a class="user-buttons" href="#">Пусто</a>
+          </div>
+          <div>
+            <p class="working-hours">с 10 до 20, ежедневно</p>
+            <a class="phone-number" href="tel:+88124502525" aria-label="Позвонить нам по телефону +8 812 450-25-25">8 812 450-25-25</a>
+          </div>
         </div>
       </div>
-      <nav class="catalog-nav">
+      <nav class="catalog-nav display-none">
         <li>
           <a>Новинки</a>
         </li>
@@ -52,7 +54,7 @@
           <a>Мелорин</a>
         </li>
       </nav>
-      <div class="modal modal-login">
+      <div class="modal modal-login display-none">
         <form>
           <input type="email">
           <input type="login">
@@ -63,7 +65,7 @@
           <a>Новая регистрация</a>
         </div>
       </div>
-      <div class="search-modal">
+      <div class="search-modal display-none">
         <input type="search">
       </div>
     </header>
@@ -75,18 +77,18 @@
           <ul class="slider">
             <li>
               <div class="slide">
-                <p>Крем-брюле и пломбир с малиновым джемом</p>
+                <p class="slide-headline">Крем-брюле и пломбир<br>с малиновым джемом</p>
                 <a class="basic-button" href="#">Давайте оба!</a>
               </div>
             </li>
             <li>
-              <div class="slide">
+              <div class="slide display-none">
                 <p>Шоколадный пломбир и лимонный сорбет</p>
                 <a class="basic-button" href="#">Давайте оба!</a>
               </div>
             </li>
             <li>
-              <div class="slide">
+              <div class="slide display-none">
                 <p>Пломбир с помадкой и клубничный щербет</p>
                 <a class="basic-button" href="#">Давайте оба!</a>
               </div>
