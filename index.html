@@ -37,23 +37,25 @@
           </div>
         </div>
       </div>
-      <nav class="catalog-nav display-none">
-        <li>
-          <a>Новинки</a>
-        </li>
-        <li>
-          <a>Сливочное</a>
-        </li>
-        <li>
-          <a>Щербеты</a>
-        </li>
-        <li>
-          <a>Фруктовый лед</a>
-        </li>
-        <li>
-          <a>Мелорин</a>
-        </li>
-      </nav>
+      <div class="display-none">
+        <nav class="catalog-nav">
+          <li>
+            <a>Новинки</a>
+          </li>
+          <li>
+            <a>Сливочное</a>
+          </li>
+          <li>
+            <a>Щербеты</a>
+          </li>
+          <li>
+            <a>Фруктовый лед</a>
+          </li>
+          <li>
+            <a>Мелорин</a>
+          </li>
+        </nav>
+      </div>
       <div class="modal modal-login display-none">
         <form>
           <input type="email">
@@ -77,32 +79,44 @@
           <ul class="slider">
             <li>
               <div class="slide">
-                <p class="slide-headline">Крем-брюле и пломбир<br>с малиновым джемом</p>
-                <a class="basic-button" href="#">Давайте оба!</a>
+                <img class="main-ice main-ice-left" src="img/main-ice-left-one.png" width="372" height="585" alt="Бежевое мороженое с шоколадными вкраплениями в вафельном рожке">
+                <img class="main-ice main-ice-right" src="img/main-ice-right-one.png" width="333" height="520" alt="Бело-розовое мороженое в вафельном рожке">
+                <div class="slide-description">
+                  <p class="slide-headline">Крем-брюле и пломбир<br>с малиновым джемом</p>
+                  <a class="basic-button slider-buy-button" href="#">Давайте оба!</a>
+                </div>
               </div>
             </li>
             <li>
               <div class="slide display-none">
-                <p>Шоколадный пломбир и лимонный сорбет</p>
-                <a class="basic-button" href="#">Давайте оба!</a>
+                <img class="main-ice main-ice-left" src="img/main-ice-left-two.png" width="372" height="585" alt="Шоколадное мороженое с шоколадными кусочками в вафельном рожке">
+                <img class="main-ice main-ice-right" src="img/main-ice-right-two.png" width="333" height="520" alt="Желтое мороженое с красными кусочками в вафельном рожке">
+                <div class="slide-description">
+                  <p>Шоколадный пломбир и лимонный сорбет</p>
+                  <a class="basic-button slider-buy-button" href="#">Давайте оба!</a>
+                </div>
               </div>
             </li>
             <li>
               <div class="slide display-none">
-                <p>Пломбир с помадкой и клубничный щербет</p>
-                <a class="basic-button" href="#">Давайте оба!</a>
+                <img class="main-ice main-ice-left" src="img/main-ice-left-three.png" width="372" height="585" alt="Желтое мороженое, политое шоколадом, в вафельном рожке">
+                <img class="main-ice main-ice-right" src="img/main-ice-right-three.png" width="333" height="520" alt="Ярко-розовое мороженое в вафельном рожке">
+                <div class="slide-description">
+                  <p>Пломбир с помадкой и клубничный щербет</p>
+                  <a class="basic-button slider-buy-button" href="#">Давайте оба!</a>
+                </div>
               </div>
             </li>
           </ul>
           <ul class="slider-bullets">
             <li>
-              <button></button>
+              <button class="slider-bullet slider-bullet-selected"></button>
             </li>
             <li>
-              <button></button>
+              <button class="slider-bullet"></button>
             </li>
             <li>
-              <button></button>
+              <button class="slider-bullet"></button>
             </li>
           </ul>
         </div>
