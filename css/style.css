@@ -49,6 +49,9 @@
   --basic-button-deep: rgba(231, 74, 53, 1);
   --basic-button-shadow: #ac1000;
   --border-opacity-white: rgba(255, 255, 255, 0.25);
+  --border-modal: #b2b2b2;
+  --modal-text: #999999;
+  --half-white: rgba(255, 255, 255, 0.5);
 
   /* Catalog additional colors */
 
@@ -392,18 +395,17 @@ img {
   left: 14px;
 }
 
-/*
-.hit-icon::after {
+.hit-item::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -15px;
+  left: 0px;
   width: 61px;
   height: 61px;
-  border-radius: 50%;
   background-color: var(--basic-white);
-  z-index: 4;
+  border-radius: 50%;
+
 }
-*/
 
 .hit-item-pic {
   border-radius: 50%;
@@ -414,6 +416,26 @@ img {
   margin-top: 13px;
   text-align: center;
   color: var(--basic-white);
+}
+
+.hit-price {
+  color: var(--basic-white);
+  position: absolute;
+  font-weight: 700;
+  left: 0;
+  top: 204px;
+}
+
+/* добавить тень плашке Хит */
+
+.price-number {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.price-weight {
+  font-size: 30px;
+  line-height: 35px;
 }
 
 .details-button {
@@ -598,6 +620,17 @@ img {
   color: var(--mailing-text);
 }
 
+.mailing-input {
+  width: 368px;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--border-modal);
+  margin-top: 47px;
+  margin-right: 10px;
+}
+
 .contacts-section {
   margin-top: 40px;
   position: relative;
@@ -654,14 +687,151 @@ img {
   min-height: 441px;
   background-color: var(--basic-white);
   border-radius: 10px;
+  padding: 20px 25px 27px 23px;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .modal-close {
   background-color: transparent;
   border: none;
   outline: none;
+  position: absolute;
+  top: 15px;
+  right: 16px;
+}
+
+.modal-headline {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--promo-text);
+  margin: 0;
+  margin-bottom: 26px;
 
 }
+
+.feedback-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 428px;
+}
+
+.feedback-input {
+  box-sizing: border-box;
+  max-width: 267px;
+  padding: 16px 14px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--border-modal);
+  color: var(--modal-text);
+}
+
+.feedback-text {
+  min-height: 154px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--border-modal);
+  padding: 16px 14px;
+  color: var(--modal-text);
+  box-sizing: border-box;
+}
+
+.feedback-submit {
+  position: absolute;
+  right: 25px;
+  bottom: 27px;
+  box-sizing: border-box;
+  min-height: 44px;
+  width: 140px;
+
+}
+
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 26px;
+  padding-top: 22px;
+}
+
+.footer-socials {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+
+.social-button {
+  margin-right: 12px;
+}
+
+.social-icon {
+  border: 2px solid var(--half-white);
+  border-radius: 50%;
+}
+
+.info-links-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  column-gap: 26px;
+}
+
+.left-column-links {
+  grid-column: 1/2;
+
+}
+
+
+.right-column-links {
+  grid-column: 2/2;
+}
+
+
+.footer-link {
+  color: var(--basic-white);
+}
+
+.info-links-list .footer-link {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.main-footer-link {
+  font-weight: 700;
+  position: relative;
+}
+
+.main-footer-link::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -22px;
+    width: 15px;
+    height: 13px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.footer-link-item {
+    max-width: 170px;
+
+}
+
+.copyright-text {
+  color: var(--basic-white);
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+
 
 
 
