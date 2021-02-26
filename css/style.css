@@ -832,7 +832,9 @@ img {
 }
 
 
-
+.items-row {
+  list-style: none;
+}
 
 
 
