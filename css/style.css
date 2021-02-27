@@ -52,6 +52,7 @@
   --border-modal: #b2b2b2;
   --modal-text: #999999;
   --half-white: rgba(255, 255, 255, 0.5);
+  --modal-cart-back: #f8f7f4;
 
   /* Catalog additional colors */
 
@@ -682,6 +683,13 @@ img {
   left: 266px;
 }
 
+/*достать блок с картой из 1146px
+заменить пин на кастомный */
+
+.map-full {
+  width: 1146px;
+}
+
 .feedback-modal {
   max-width: 477px;
   min-height: 441px;
@@ -836,5 +844,119 @@ img {
   list-style: none;
 }
 
+.modal-cart {
+  width: 539px;
+  min-height: 242px;
+  background-color: var(--modal-cart-back);
+  padding: 30px 34px 21px 21px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+.modal-cart-close {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.cart-item-pic {
+  border-radius: 50%;
+}
+
+.single-product {
+  display: grid;
+  grid-template-columns: 303px 205px;
+  column-gap: 31px;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+
+.single-product-desc p {
+  margin: 0;
+
+}
+
+.single-product-desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.final-price-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.final-cart-button {
+  font-size: 18px;
+  line-height: 16px;
+  width: 172px;
+  height: 44px;
+}
+
+.breadcrumbs-wrapper {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+
+.breadcrumbs-item {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 22px;
+  position: relative;
+}
+
+.breadcrumbs-item::after:not(:last-of-type) {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-image: url("../img/double-arrows-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+.catalog-headline {
+  margin: 9px 0 30px 0;
+  color: var(--basic-white);
+  font-size: 35px;
+  line-height: 41px;
+}
+
+
+
+
+
+.pagination {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.catalog-link {
+  color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
 
 
