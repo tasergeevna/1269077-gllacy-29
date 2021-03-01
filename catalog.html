@@ -121,6 +121,12 @@
           <fieldset>
             <legend>Сортировка:</legend>
             <div>По популярности</div>
+            <ul class="sorting-list display-none">
+              <li class="sorting-list-item sorting-list-selected">по популярности</li>
+              <li class="sorting-list-item">сначала недорогие</li>
+              <li class="sorting-list-item">сначала дорогие</li>
+              <li class="sorting-list-item">по жирности</li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Цена: 100 - 500</legend>
@@ -180,14 +186,8 @@
           </fieldset>
           <a href="#">Применить</a>
         </form>
-        <div class="sorting-list">
-          <ul>
-            <li>по популярности</li>
-            <li>сначала недорогие</li>
-            <li>сначала дорогие</li>
-            <li>по жирности</li>
-          </ul>
-        </div>
+
+
 
 
       </section>
@@ -207,7 +207,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
           <li>
@@ -223,7 +223,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочно-кофейное с кусочками шоколада</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
           <li>
@@ -239,7 +239,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочно-клубничное с присыпкой из белого шоколада</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
           <li>
@@ -255,7 +255,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочное крем-брюле с карамельной подливкой</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
         </ul>
@@ -273,7 +273,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочное с брусничным джемом</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
           <li>
@@ -289,7 +289,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочно-черничное с цельными ягодами черники</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
           <li>
@@ -305,7 +305,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочно-лимонное с карамельной присыпкой</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
           <li>
@@ -321,7 +321,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочное с шоколадной стружкой</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
         </ul>
@@ -339,7 +339,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочно-ванильное с кусочками шоколада</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
           <li>
@@ -355,7 +355,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочноe с ментоловым сиропом</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
           <li>
@@ -371,7 +371,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочное с кусочками черного шоколада</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
           <li>
@@ -387,7 +387,7 @@
                 <span class="price-weight">/ кг</span>
               </div>
               <p class="hit-desc">Сливочноe с мятным сиропом</p>
-              <a class="basic-button" href="#">Быстрый просмотр</a>
+              <a class="basic-button details-button display-none" href="#">Быстрый просмотр</a>
             </div>
           </li>
         </ul>
@@ -401,8 +401,8 @@
             </svg>
           </button>
         </li>
-        <li class="pages-button current-page">
-          <a class="catalog-link" aria-label="Первая страница каталога">1</a>
+        <li class="pages-button">
+          <a class="catalog-link current-page" aria-label="Первая страница каталога">1</a>
         </li>
         <li class="pages-button">
           <a class="catalog-link" href="blank.html" aria-label="Вторая страница каталога">2</a>
